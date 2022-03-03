@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="utf-8">
     
     <!-- Basic Boilerplate reference: https://www.sitepoint.com/a-basic-html5-template/ -->
@@ -15,28 +15,75 @@
 
     <!-- <link rel="icon" href="/favicon.ico"> -->
 
-    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/reset.css">
 
-</head>
-
-
-<body>
-    <div class="frame">
-    <header>
-
-
+    </head>
+    <body>
     
-    </header>
+        <main>
+            <div id="frame">
+                <header>
+                    <img id="sunset-header" src="assets/images/sunset_title_box.jpg" alt="Sunset Central District"/>
+
+                    <div id="name-box"><h1>Brianna Odell</h1></div>
+
+                </header>
+
+                <nav>
+                    <ul>
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#social">Social</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <section id="about-me">
+                    <a id="about"><h2>About Me</h2></a>
+                    <div class="l-border-box">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Square_200x200.png" alt="Brianna Odell" class="profile-photo" />
+                        <p>I am a social media developer in Seattle, looking for oppurtunities to build my knowledge on web development for music and streaming focused social media.</p>
+                      <p>Lorem ipsum</p>
+                    </div>
+                </section>
+
+                <section id="portfolio-tiles">
+                    <a id="porfolio"><h2>P O R T F O L I O</h2></a>
+                </section>
+
+                <section id="social-media">
+                    <div class="l-border-box">
+                        <a id="social"><h2>Social</h2></a>
+                        <!-- Icons from https://www.iconsdb.com/gray-icons/gray-social-icons.html -->
+
+                    </div>
+
+                </section>
+
+                <section id="contact-form">
+                    <div class="l-border-box">
+                        <a id="contact"><h2>Contact</h2></a>
+                        <!-- Form from https://www.w3schools.com/howto/howto_css_contact_form.asp -->
+
+                            <form>
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name..">
+                            
+                                <label for="subject">Subject</label>
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                            
+                                <input type="submit" value="Submit">
+                            </form>
+                    </div>
+                </section>
+
+                
 
 
 
 
-
-    </div>
-</body>
-
-
-
-
-</head>
+            </div>
+        </main>
+    </body>
 </html>
