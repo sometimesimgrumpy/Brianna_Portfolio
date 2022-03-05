@@ -49,6 +49,13 @@ ul {
   position: sticky;
 }
 
+p a {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(211, 231, 250);
+  text-decoration: underline 1px;
+  font-size: 16px;
+}
+
 nav li {
     display: inline;
 }
