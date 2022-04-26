@@ -1,222 +1,206 @@
 body {
-    background-color: #2a2e30;
-    align-items: center;
-    justify-content: center;
+  background-color: #2a2e30;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-    display: flex;
-    flex: 1 1 0;
-    max-width: auto;
-    margin: 2% auto;
+  display: flex;
+  flex: 1 1 0;
+  max-width: auto;
+  margin: 2% auto;
 }
 
 h1 {
-    font-size: 2rem;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
+  font-size: 250%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
 }
 
 p {
-    font-size: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(211, 231, 250);
+  font-size: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(211, 231, 250);
 }
 
 #frame {
-    display: block;
-    max-width: 1000px;
-    margin: auto;
-    padding: 25px;
-    background-color: #575959;
+  display: block;
+  max-width: 1000px;
+  margin: auto;
+  padding: 25px;
+  background-color: #575959;
 }
 
 
 #sunset-header {
-    max-width: 800px;
-    display: block;
+  max-width: 800px;
+  display: block;
 }
 
-.nav {
-    width: 800px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #2a2e30;
+nav {
+  width: 800px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #2a2e30;
 }
 
-/* ul {
-  position: sticky;
-} */
+ul {
+position: sticky;
+}
 
-p a {
+nav li {
+  display: inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: 6px 30px 6px 30px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(211, 231, 250);
-  text-decoration: underline 1px;
-  font-size: 16px;
+  background-color: #2a2e30;
+  text-decoration: none;
 }
 
-.nav li {
-    display: inline;
+nav a:hover {
+  background-color:white;
+  opacity: 0.4;
+  color: #111111;
 }
-
-.nav a {
-    display: inline-block;
-    padding: 6px 30px 6px 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    color: rgb(211, 231, 250);
-    background-color: #2a2e30;
-    text-decoration: none;
-}
-
-/* .nav a:hover {
-    background-color:white;
-    opacity: 0.4;
-    color: #111111;
-} */
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
-    font-size: 200%;
-    color: rgb(211, 231, 250);
-    text-align: right;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 200%;
+  color: rgb(211, 231, 250);
+  text-align: right;
 }
 
 h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 200;
-    font-size: 125%;
-    color: rgb(211, 231, 250);
-    display: block;
-    letter-spacing: 10px;
-    text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+  font-size: 125%;
+  color: rgb(211, 231, 250);
+  display: block;
+  letter-spacing: 10px;
+  text-align: center;
 }
 
 img.profile-photo {
-  float: left;
-  margin: 0px 5px 5px 5px;
-  max-height: 125px;
-  position: relative;
-  top: 0px;
-  right: 0px;
+float: left;
+margin: 0px 5px 5px 5px;
+max-height: 125px;
+position: relative;
+top: 0px;
+right: 0px;
 }
 
 .portfolio-tiles {
-    display: block;
+  display: block;
 }
 
 div.l-border-box {
-    display: block;
-    width: 800px;
-    border-left: 5px solid #282828;
-    padding: 1%;
-    text-align: right;
-    margin: auto;
-    height: auto;
+  display: block;
+  width: 800px;
+  border-left: 5px solid #282828;
+  padding: 1%;
+  text-align: right;
+  margin: auto;
+  height: auto;
 }
 
 /* Container needed to position the overlay. Adjust the width as needed */
 .big-tile {
-    position: relative;
-    max-width: 750px;
-    margin: auto;
-  }
-  
-  .small-tile {
-    position: relative;
-    max-width: 350px;
-    margin: auto;
-  }
-  
-  .port-row {
-    max-width: 850px;
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    margin: auto;
-  }
-  
-  .port-row img {
-    display: inline;
-    max-width: 350px;
-  }
-  
-  /* Make the image to responsive */
-  .thumb {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  
-  /* The overlay effect - lays on top of the container and over the image */
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
-    color: #f1f1f1;
-    width: 100%;
-    transition: .5s ease;
-    opacity:0;
-    color: white;
-    font-size: 20px;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* When you mouse over the container, fade in the overlay title */
-  .big-tile:hover .overlay {
-    opacity: 1;
-  }
-  
-  .small-tile:hover .overlay {
-    opacity: 1;
-  }
-  
-  .overlay a {
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: rgb(211, 231, 250);
-    text-decoration: underline 1px;
-    font-size: 16px;
-  }
+  position: relative;
+  max-width: 750px;
+  margin: auto;
+}
+
+.small-tile {
+  position: relative;
+  max-width: 350px;
+  margin: auto;
+}
+
+.port-row {
+  max-width: 850px;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  margin: auto;
+}
+
+.port-row img {
+  display: inline;
+  max-width: 350px;
+}
+
+/* Make the image to responsive */
+.thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.big-tile:hover .overlay {
+  opacity: 1;
+}
+
+.small-tile:hover .overlay {
+  opacity: 1;
+}
+
+.overlay a {
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(211, 231, 250);
+  text-decoration: underline 1px;
+  font-size: 16px;
+}
 
 /* Form from https://www.w3schools.com/howto/howto_css_contact_form.asp */
 
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 5px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin: 6px;
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-* {
-    box-sizing: border-box;
-  }
+  width: 100%; /* Full width */
+  padding: 5px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin: 6px;
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-  /* Media query for mobile*/
-  @media screen and (max-width: 576px) {
-    nav a {
-      display: block;
-      width: 50%;
-    }
-  }
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+* {
+  box-sizing: border-box;
+}
