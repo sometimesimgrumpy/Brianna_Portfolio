@@ -114,12 +114,14 @@ div.l-border-box {
   position: relative;
   max-width: 750px;
   margin: auto;
+  box-shadow: 0 0 5px 1px #282828;
 }
 
 .small-tile {
   position: relative;
   max-width: 350px;
   margin: auto;
+  box-shadow: 0 0 5px 1px #282828;
 }
 
 .port-row {
@@ -176,6 +178,12 @@ div.l-border-box {
 }
 
 /* Form from https://www.w3schools.com/howto/howto_css_contact_form.asp */
+
+form {
+  text-align: left;
+  font-weight: bold;
+  color: rgb(211, 231, 250)
+}
 
 input[type=text], select, textarea {
   width: 100%; /* Full width */
